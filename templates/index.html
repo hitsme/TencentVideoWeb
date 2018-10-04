@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>麻花腾视频直链解析</title>
+    <link rel="shortcut icon" href="//v.qq.com/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+</head>
+<body>
+<div id="app">
+    <div class="layout">
+        <layout>
+            <i-header :style="{position: 'fixed', width: '100%'}">
+                <i-menu mode="horizontal" theme="dark" active-name="1">
+                    <div class="layout-logo"></div>
+                    <div class="layout-nav">
+                        <menu-item name="1" @click.native="goFpage()">
+                            <icon type="ios-navigate"></icon>
+                            首页
+                        </menu-item>
+                        <menu-item name="2">
+                            <icon type="ios-keypad"></icon>
+                            使用说明
+                        </menu-item>
+                        <menu-item name="3" @click.native="show">
+                            <icon type="ios-analytics"></icon>
+                            关于
+                        </menu-item>
+                    </div>
+                </i-menu>
+            </i-header>
+            <i-content :style="{margin: '88px 20px 0', background: '#fff', minHeight: '500px'}">
+                <Modal v-model="visible" title="关于">&nbsp;&nbsp;麻花腾视频直链解析,写于2018.10.02.视频源直接解析到腾讯服务器，与老的解析不一样，不需要中间服务器跳转，速度上很稳定。目前只支持腾讯视频会员视频解析，付费视频暂不支持，后续增加优酷，爱奇艺解析。<br>&nbsp;&nbsp;解析失败请联系管理员修复，联系邮箱：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1182681022@qq.com
+                    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author:Hitsme
+                </Modal>
+                <template>
+                    <i-input search enter-button="解析播放" value="https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html" @click.native="playYoururl()" element-id="videourl"
+                             ref="iurl"
+                             placeholder="输入视频链接..."/>
+                </template>
+                <center>
+                    <video id="video" controls autoplay class="videoCentered"></video>
+                </center>
+            </i-content>
+            <center>
+                <i-footer class="layout-footer-center">2017-2018 &copy; Hitsme</i-footer>
+            </center>
+        </layout>
+    </div>
+</div>
+
+<script>
+    var vue=new Vue({
+        el: '#app',
+        data: {
+            visible: false
+        },
+        methods: {
+            show: function () {
+                this.visible = true;
+            },
+            show2: function () {
+                alert(this.$refs.iurl.value)
+            },info () {
+                this.$Message.info('视频正在解析中...');
+            }
+        }
+    })
+    var video = document.getElementById('video');
+    if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+        });
+    }
+    // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+    // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+    // This is using the built-in support of the plain video element, without using hls.js.
+    // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
+    // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
+    else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
+        video.addEventListener('loadedmetadata', function () {
+            video.play();
+        });
+    }
+
+    function playYoururl() {
+        var videourl = document.getElementById('videourl').value;
+        var realurl=""
+        vue.info()
+        if (videourl!=""||videourl!=null) {
+            alert("正在解析，请稍后...")
+            $.ajaxSettings.async = false;
+            $.post("/additem", {"videourl": videourl}, function (data) {
+                realurl = data.result
+            }, "json");
+            $.ajaxSettings.async = true;
+            //alert(document.getElementById('videourl').value)
+            var video = document.getElementById('video');
+            if (Hls.isSupported()&&realurl!="") {
+                var hls = new Hls();
+                hls.loadSource(realurl);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    video.play();
+                });
+            }
+        }
+    }
+
+    function goFpage() {
+        window.location.replace('/')
+    }
+</script>
+</body>
+</html>
