@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解析说明</title>
+    <link rel="shortcut icon" href="//v.qq.com/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <tabs>
+        <tab-pane label="第一步" icon="md-book"><p><img src="{{ url_for('static', filename='images/one.png') }}"
+                                                     height="100%" width="100%"/></p></tab-pane>
+        <tab-pane label="第二步" icon="ios-fastforward"><p><img src="{{ url_for('static', filename='images/two.png') }}"
+                                                             height="100%" width="100%"/></p></tab-pane>
+        <tab-pane label="第三步" icon="ios-cafe"><p><img src="{{ url_for('static', filename='images/three.png') }}"
+                                                      height="100%" width="100%"/></p></tab-pane>
+    </tabs>
+</div>
+
+<script>
+    var Main = {}
+
+    var Component = Vue.extend(Main)
+    new Component().$mount('#app')
+</script>
+</body>
+</html>

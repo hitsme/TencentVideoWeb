@@ -8,7 +8,7 @@ import io
 DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"}
 DEFAULT_TIMEOUT = 360
 def getBrowser():
-  browser = webdriver.Chrome()
+  browser = webdriver.Firefox()
   browser.get('https://v.qq.com/')
   with open('cookies.json', 'r', encoding='utf-8') as f:
     listCookies = json.loads(f.read())

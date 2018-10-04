@@ -24,7 +24,7 @@
                             <icon type="ios-navigate"></icon>
                             首页
                         </menu-item>
-                        <menu-item name="2">
+                        <menu-item name="2" @click.native="goOptions()">
                             <icon type="ios-keypad"></icon>
                             使用说明
                         </menu-item>
@@ -120,6 +120,10 @@
     function goFpage() {
         window.location.replace('/')
     }
+   function goOptions()
+   {
+       window.open("/options")
+   }
 </script>
 </body>
 </html>

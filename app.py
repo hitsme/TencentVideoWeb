@@ -7,7 +7,9 @@ browser=spiderStidio.browser
 @app.route('/')
 def home():
     return render_template("index.html")
-
+@app.route('/options')
+def options():
+    return render_template("options.html")
 
 @app.route('/additem', methods=['POST'])
 def additem():
