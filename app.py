@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,jsonify
-from spiderStudio import spiderStidio
+#from spiderStudio import spiderStidio
 app = Flask(__name__)
-browser=spiderStidio.browser
+#browser=spiderStidio.browser
 
 
 @app.route('/')
@@ -14,11 +14,11 @@ def options():
 @app.route('/additem', methods=['POST'])
 def additem():
     print(request.form.get("videourl")+"4324234234")
-    realurl=spiderStidio.getYourVideoUrl(browser,request.form.get("videourl"))
-    return jsonify({"result":realurl})
+    #realurl=spiderStidio.getYourVideoUrl(browser,request.form.get("videourl"))
+    return jsonify({"result":""})
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
-        port=8888,
+        port=80,
         debug=True
     )
