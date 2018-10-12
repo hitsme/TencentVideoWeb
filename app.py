@@ -1,4 +1,5 @@
 from flask import Flask,render_template,request,jsonify
+from tools import pcOrmobile
 from spiderStudio import spiderStidio
 import threading
 app = Flask(__name__)
@@ -7,7 +8,10 @@ browser=spiderStidio.browser
 
 @app.route('/')
 def home():
-    return render_template("index.html")
+    if pcOrmobile.pc_or_mobile(str(request.user_agent)):
+       return render_template("indexmobile.html")
+    else:
+        return render_template("index.html")
 @app.route('/options')
 def options():
     return render_template("options.html")

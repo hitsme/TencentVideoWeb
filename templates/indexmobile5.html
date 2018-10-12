@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>麻花腾视频直链解析</title>
+    <link rel="shortcut icon" href="http://v.qq.com/favicon.ico"/>
+    <script src="{{ url_for('static', filename='js/hls.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swipe.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/zepto.min.js') }}"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.3/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/weui.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/weui2.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/weui3.css') }}"/>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            border-color: #efeff4;
+        }
+
+        .weui_tab_bd_item {
+            display: none;
+        }
+
+        h3 {
+            padding: 45% 0 0;
+            text-align: center;
+            color: #888;
+            font-weight: normal;
+        }
+
+
+    </style>
+</head>
+<body ontouchstart style="background-color: #f8f8f8;">
+<div class="container" id="container"></div>
+<div class="weui_tab">
+    <div class="weui_tab_bd">
+        <div id="tab1" class="weui_tab_bd_item weui_tab_bd_item_active">
+            <div class="weui-panel weui-panel_access">
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input id="videourl" class="weui_input" type="number" placeholder="请输入解析地址"/>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <a onclick="analysis()" class="weui_btn weui_btn_mini weui_btn_warn"><i
+                                    class="icon icon-103 f20"></i>解析播放</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class='f-white bg-red' style="background-color:#C92C2C">热门解析电影</span>
+            <div class="slide" id="slide1">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie1.jpeg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/6983f15b7g5xch7.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">动物世界</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie2.jpg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">你的名字</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie3.jpg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/6kq9o0hr79kamlt.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">巨齿鲨</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie4.jpg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/nsbeo08q1ue0hf6.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">激斗之极乐球道</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie5.jpeg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/fgqtuu38z91hfyw.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">一出好戏</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie6.jpg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/begymcfom3fw25j.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">谜巢</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie7.jpg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/fnvl4okkiqycmyj.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">超时空同居</div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/movie8.jpg') }}"
+                                 alt="点击解析播放" onclick="analysis('https://v.qq.com/x/cover/y60o6957ucc46qo.html')">
+                        </a>
+                        <div class="slide-desc" style="background-color: #C92C2C">后天</div>
+                    </li>
+                </ul>
+                <div class="dot">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <span class='bg-red f-white' style="background-color:#C92C2C">解析播放</span>
+            <div style="width: 100%">
+                <video id="video" controls autoplay class="videoCentered" style="width: 100%;height: 50%"></video>
+            </div>
+        </div>
+        <div id="tab2" class="weui_tab_bd_item">
+            <h1 class="doc-head">使用说明</h1>
+        </div>
+        <div id="tab3" class="weui_tab_bd_item">
+            <h1 class="doc-head">发现</h1>
+        </div>
+        <div id="tab4" class="weui_tab_bd_item">
+            <h1 class="doc-head">关于</h1>
+        </div>
+    </div>
+    <div class="weui_tabbar">
+        <a href="#tab1" class="weui_tabbar_item weui_bar_item_on">
+            <div class="weui_tabbar_icon">
+                <img src="{{ url_for('static', filename='images/icon_tabbar.png') }}" alt="">
+            </div>
+            <p class="weui_tabbar_label">
+                首页
+            </p>
+        </a>
+        <a href="#tab2" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="{{ url_for('static', filename='images/icon_tabbar.png') }}" alt="">
+            </div>
+            <p class="weui_tabbar_label">使用说明</p>
+        </a>
+        <a href="#tab3" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="{{ url_for('static', filename='images/icon_tabbar.png') }}" alt="">
+            </div>
+            <p class="weui_tabbar_label">发现</p>
+        </a>
+        <a href="#tab4" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="{{ url_for('static', filename='images/icon_tabbar.png') }}" alt="">
+            </div>
+            <p class="weui_tabbar_label">关于</p>
+        </a>
+    </div>
+</div>
+<script>
+    $('#slide1').swipeSlide({
+        autoSwipe: true,//自动切换默认是
+        speed: 3000,//速度默认4000
+        continuousScroll: true,//默认否
+        transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',//过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+        lazyLoad: true,//懒加载默认否
+        firstCallback: function (i, sum, me) {
+            me.find('.dot').children().first().addClass('cur');
+        },
+        callback: function (i, sum, me) {
+            me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        }
+    });
+    // document.body.setAttribute('ontouchstart', '');
+    var video = document.getElementById('video');
+    if (Hls.isSupported()) {
+        {
+            var hls = new Hls();
+            hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                video.play();
+            });
+        }
+    }
+    $.showLoading = function (text) {
+        var html = '<div class="weui_loading">';
+        for (var i = 0; i < 12; i++) {
+            html += '<div class="weui_loading_leaf weui_loading_leaf_' + i + '"></div>';
+        }
+        html += '</div>';
+        html += '<p class="weui_toast_content">' + (text || "数据加载中") + '</p>';
+        show(html, 'weui_loading_toast');
+    }
+
+    $.hideLoading = function () {
+        hide();
+    }
+
+    // toast
+    $(function () {
+        var $toast = $('#toast');
+        $('#showToast').on('click', function () {
+            if ($toast.css('display') != 'none') return;
+
+            $toast.fadeIn(100);
+            setTimeout(function () {
+                $toast.fadeOut(100);
+            }, 2000);
+        });
+    });
+
+    // loading
+    $(function () {
+        var $loadingToast = $('#loadingToast');
+        $('#showLoadingToast').on('click', function () {
+            if ($loadingToast.css('display') != 'none') return;
+
+            $loadingToast.fadeIn(100);
+            setTimeout(function () {
+                $loadingToast.fadeOut(100);
+            }, 2000);
+        });
+    });
+
+    function analysis() {
+        var videourl = document.getElementById('videourl').value;
+        var realurl = ""
+        $.showLoading("正在解析，请稍后...");
+        if (videourl != "" || videourl != null) {
+            $.showLoading("正在解析，请稍后...");
+            $.ajaxSettings.async = false;
+            $.post("/additem", {"videourl": videourl}, function (data) {
+                $.hideLoading();
+                realurl = data.result
+            }, "json");
+            $.ajaxSettings.async = true;
+            //alert(document.getElementById('videourl').value)
+            var video = document.getElementById('video');
+            if (Hls.isSupported() && realurl != "") {
+                var hls = new Hls();
+                hls.loadSource(realurl);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    video.play();
+                });
+            }
+        }
+    }
+
+    function analysisstatic(vurl) {
+        if (vurl != "" || vurl != null) {
+            $.showLoading("正在解析，请稍后...");
+            $.ajaxSettings.async = false;
+            $.post("/additem", {"videourl": vurl}, function (data) {
+                realurl = data.result
+            }, "json");
+            $.ajaxSettings.async = true;
+            //alert(document.getElementById('videourl').value)
+            var video = document.getElementById('video');
+            if (Hls.isSupported() && realurl != "") {
+                var hls = new Hls();
+                hls.loadSource(realurl);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    video.play();
+                });
+            }
+        }
+    }
+</script>
+<script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/swiper.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/city-picker.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-weui/1.2.0/js/jquery-weui.js"></script>
+</body>
+</html>
