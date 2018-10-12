@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,jsonify
 from tools import pcOrmobile
 from spiderStudio import spiderStidio
-import threading
+#import threading
 app = Flask(__name__)
 browser=spiderStidio.browser
 #R=threading.Lock()
@@ -15,7 +15,9 @@ def home():
 @app.route('/options')
 def options():
     return render_template("options.html")
-
+@app.route('/jz')
+def jz():
+    return render_template("jz.html")
 @app.route('/additem', methods=['POST'])
 def additem():
     print(request.form.get("videourl")+"4324234234")

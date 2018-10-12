@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>麻花腾视频直链解析</title>
-    <link rel="shortcut icon" href="//v.qq.com/favicon.ico" />
+    <link rel="shortcut icon" href="//v.qq.com/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
-       <script src="{{ url_for('static', filename='js/vue.min.js') }}"></script>
-     <script src="{{ url_for('static', filename='js/iview.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vue.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/iview.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/hls.js') }}"></script>
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 
@@ -24,9 +24,13 @@
                             <icon type="ios-navigate"></icon>
                             首页
                         </menu-item>
-                        <menu-item name="2" @click.native="goOptions()">
+                        <menu-item name="4" @click.native="goOptions()">
                             <icon type="ios-keypad"></icon>
                             使用说明
+                        </menu-item>
+                         <menu-item name="2" @click.native="gojz()">
+                            <icon type="ios-keypad"></icon>
+                            捐助
                         </menu-item>
                         <menu-item name="3" @click.native="show">
                             <icon type="ios-analytics"></icon>
@@ -36,11 +40,12 @@
                 </i-menu>
             </i-header>
             <i-content :style="{margin: '88px 20px 0', background: '#fff', minHeight: '500px'}">
-                <Modal v-model="visible" title="关于">&nbsp;&nbsp;麻花腾视频直链解析,写于2018.10.02.视频源直接解析到腾讯服务器，与老的解析不一样，不需要中间服务器跳转，速度上很稳定。目前只支持腾讯视频会员视频解析，付费视频暂不支持，后续增加优酷，爱奇艺解析。<br>&nbsp;&nbsp;解析失败请联系管理员修复，联系邮箱：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1182681022@qq.com
+                <Modal v-model="visible" title="关于">&nbsp;&nbsp;麻花腾视频直链解析,写于2018.10.02.视频源直接解析到腾讯服务器，与老的解析不一样，不需要中间服务器跳转，速度上很稳定。目前只支持腾讯视频会员视频解析，付费视频暂不支持，后续增加优酷，芒果tv,爱奇艺解析。因为这边服务搭建需要每个月大概40元费用，希望大家可以的话捐个五毛钱，谢谢！<br>&nbsp;&nbsp;解析失败请联系管理员修复，联系邮箱：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deemonliang5203@gmail.com
                     <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author:Hitsme
                 </Modal>
                 <template>
-                    <i-input search enter-button="解析播放" value="https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html" @click.native="playYoururl()" element-id="videourl"
+                    <i-input search enter-button="解析播放" value="https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html"
+                             @click.native="playYoururl()" element-id="videourl"
                              ref="iurl"
                              placeholder="输入视频链接..."/>
                 </template>
@@ -56,7 +61,7 @@
 </div>
 
 <script>
-    var vue=new Vue({
+    var vue = new Vue({
         el: '#app',
         data: {
             visible: false
@@ -67,8 +72,8 @@
             },
             show2: function () {
                 alert(this.$refs.iurl.value)
-            },info () {
-                this.$Message.info('视频正在解析中...');
+            }, info() {
+                this.$Message.info('视频正在玩命解析中...');
             }
         }
     })
@@ -95,10 +100,10 @@
 
     function playYoururl() {
         var videourl = document.getElementById('videourl').value;
-        var realurl=""
+        var realurl = ""
         vue.info()
-        if (videourl!=""||videourl!=null) {
-            alert("正在解析，请稍后...")
+        if (videourl != "" || videourl != null) {
+            alert("正在玩命解析中...")
             $.ajaxSettings.async = false;
             $.post("/additem", {"videourl": videourl}, function (data) {
                 realurl = data.result
@@ -106,7 +111,7 @@
             $.ajaxSettings.async = true;
             //alert(document.getElementById('videourl').value)
             var video = document.getElementById('video');
-            if (Hls.isSupported()&&realurl!="") {
+            if (Hls.isSupported() && realurl != "") {
                 var hls = new Hls();
                 hls.loadSource(realurl);
                 hls.attachMedia(video);
@@ -120,10 +125,13 @@
     function goFpage() {
         window.location.replace('/')
     }
-   function goOptions()
-   {
-       window.open("/options")
-   }
+
+    function goOptions() {
+        window.open("/options")
+    }
+     function gojz() {
+        window.open("/jz")
+    }
 </script>
 </body>
 </html>

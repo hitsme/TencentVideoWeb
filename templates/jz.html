@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解析说明</title>
+    <link rel="shortcut icon" href="//v.qq.com/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <tabs>
+        <tab-pane label="微信" icon="md-book"><p><center><img src="{{ url_for('static', filename='images/wc.png') }}"
+                                                            height="40%" width="40%"/></center></p></tab-pane>
+        <tab-pane label="支付宝" icon="ios-fastforward"><p><center><img src="{{ url_for('static', filename='images/zfb.jpg') }}"
+                                                                     height="40%" width="40%"/></center></p></tab-pane>
+
+    </tabs>
+</div>
+
+<script>
+    var Main = {}
+
+    var Component = Vue.extend(Main)
+    new Component().$mount('#app')
+</script>
+</body>
+</html>

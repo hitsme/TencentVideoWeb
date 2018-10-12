@@ -9,9 +9,10 @@
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/swipe.js') }}"></script>
     <script src="{{ url_for('static', filename='js/zepto.min.js') }}"></script>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.3/css/jquery-weui.min.css">
+    <script src="{{ url_for('static', filename='js/jquery-weui.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/weui.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-weui.min.css') }}" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-weui.min2.css') }}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/weui.css') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/weui2.css') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/weui3.css') }}"/>
@@ -38,7 +39,6 @@
 
     </style>
 </head>
-
 <body ontouchstart style="background-color: #f8f8f8;">
 <div class="container" id="container"></div>
 <div class="weui_tab">
@@ -49,7 +49,7 @@
                     <div class="weui_cell">
 
                         <div class="weui_cell_bd weui_cell_primary">
-                            <input id="videourl" class="weui_input"  placeholder="请输入解析地址"/>
+                            <input id="videourl" class="weui_input" placeholder="请输入解析地址"/>
                         </div>
                         <div class="weui_cell_ft">
                             <a onclick="analysis()" id="showLoading" class="weui_btn weui_btn_mini weui_btn_warn"><i
@@ -130,13 +130,22 @@
             </div>
         </div>
         <div id="tab2" class="weui_tab_bd_item">
-            <h1 class="doc-head">使用说明</h1>
+            <h1 class="doc-head" style="text-align: center">使用说明</h1>
+            <h2 class="doc-body">1.打开腾讯视频官网，打开想要解析视频复制地址栏的地址</h2>
+            <h2 class="doc-body">2.将复制的地址黏贴到解析地址栏，点击解析按钮</h2>
         </div>
         <div id="tab3" class="weui_tab_bd_item">
-            <h1 class="doc-head">发现</h1>
+            <h1 class="doc-head" style="text-align: center">捐助</h1>
+            <img src="{{ url_for('static', filename='images/wc.png') }}" style="width:300px;height:300px;display:block;margin:0 auto;">
+
+            <img src="{{ url_for('static', filename='images/zfb.jpg') }}" style="width:300px;height:300px;display:block;margin:0 auto;">
         </div>
         <div id="tab4" class="weui_tab_bd_item">
-            <h1 class="doc-head">关于</h1>
+            <h1 class="doc-head" style="text-align: center">关于</h1>
+            <h2 class="doc-body">&nbsp;&nbsp;麻花腾视频直链解析,写于2018.10.02.视频源直接解析到腾讯服务器，与老的解析不一样，不需要中间服务器跳转，速度上很稳定</h2>
+            <h2 class="doc-body">&nbsp;&nbsp;目前只支持腾讯视频会员视频解析，付费视频暂不支持，后续增加优酷，芒果tv,爱奇艺解析。因为这边服务搭建需要每个月大概40元费用，希望大家可以的话捐个五毛钱，谢谢！
+                解析失败请联系管理员修复，联系邮箱：
+                deemonliang5203@gmail.com</h2>
         </div>
     </div>
     <div class="weui_tabbar">
@@ -158,7 +167,7 @@
             <div class="weui_tabbar_icon">
                 <img src="{{ url_for('static', filename='images/icon_tabbar.png') }}" alt="">
             </div>
-            <p class="weui_tabbar_label">发现</p>
+            <p class="weui_tabbar_label">捐助</p>
         </a>
         <a href="#tab4" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
@@ -195,12 +204,12 @@
             });
         }
     }
-    $(document).on("click", "#showLoading", function () {
-        $.showLoading();
-        setTimeout(function () {
-            $.hideLoading();
-        }, 3000)
-    });
+    {#    $(document).on("click", "#showLoading", function () {
+            $.showLoading();
+            setTimeout(function () {
+                $.hideLoading();
+            }, 3000)
+        });#}
 
     function analysis() {
         var videourl = document.getElementById('videourl').value;
@@ -230,8 +239,9 @@
     }
 
     function analysisstatic(vurl) {
+        alert("正在玩命解析中...")
         if (vurl != "" || vurl != null) {
-             $.alert("正在解析加载中...")
+            $.alert("正在解析加载中...")
             $.ajaxSettings.async = false;
             $.post("/additem", {"videourl": vurl}, function (data) {
                 realurl = data.result
@@ -247,11 +257,9 @@
                     video.play();
                 });
             }
-        } else
-            $.alert("请输入解析地址！")
+        }
     }
 
 </script>
-<script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
 </body>
 </html>

@@ -1058,3 +1058,392 @@ JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/stat
 1539328582101	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
 1539328582123	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
 [Parent 7800, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539341622411	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.hERPJk9UCSNQ"
+1539341631130	Marionette	INFO	Listening on port 55260
+1539341631637	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539341631663	Marionette	DEBUG	[4294967297] Frame script loaded
+1539341631678	Marionette	DEBUG	[4294967297] Frame script registered
+1539341631869	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1539341634489	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1539341847340	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.UgTtByCgwpmh"
+1539341851001	Marionette	INFO	Listening on port 55772
+1539341852307	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539341852334	Marionette	DEBUG	[6442450945] Frame script loaded
+1539341852335	Marionette	DEBUG	[6442450945] Frame script registered
+1539341852353	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539341855048	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539341875231	Marionette	DEBUG	[6442450965] Frame script loaded
+1539341875264	Marionette	DEBUG	[6442450965] Frame script registered
+1539341875344	Marionette	DEBUG	[6442450968] Frame script loaded
+1539341875345	Marionette	DEBUG	[6442450968] Frame script registered
+1539341877749	Marionette	DEBUG	[6442450981] Frame script loaded
+1539341877760	Marionette	DEBUG	[6442450981] Frame script registered
+[Parent 12044, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12044, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12044, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539342255567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.mKc72ukbiIol"
+1539342259090	Marionette	INFO	Listening on port 56704
+1539342259173	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://activity-stream/lib/ActivityStreamPrefs.jsm :: ignoreBranch :: line 29"  data: no] Stack trace: ignoreBranch()@resource://activity-stream/lib/ActivityStreamPrefs.jsm:29
+uninit()@resource://activity-stream/lib/Store.jsm:172
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:363
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:86
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:194
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:1592
+_shutdown()@resource://gre/modules/addons/XPIProvider.jsm:1728
+observe()@resource://gre/modules/AsyncShutdown.jsm:541
+JavaScript error: resource:///modules/SavantShieldStudy.jsm, line 171: TypeError: this.addonListener is undefined
+[Parent 11076, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 11076, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7376, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12172, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1539342272887	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.5B0pUGHq2KAG"
+1539342276603	Marionette	INFO	Listening on port 56760
+1539342277123	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342277149	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342277149	Marionette	DEBUG	[6442450945] Frame script registered
+1539342277165	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+[Parent 10156, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10156, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/sr[Chic/chrome/common/ipc_channel_win.cc, line 346
+ld 10756, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10756, Ch[Parent 10156, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7604,1539342299361	Marionette	INFO	Stopped listening on port 56760
+[GP
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1539342305893	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.Ljj0Nnku0ymZ"
+1539342315906	Marionette	INFO	Listening on port 56850
+1539342316347	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342316374	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342316374	Marionette	DEBUG	[6442450945] Frame script registered
+1539342316389	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342319393	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+JavaScript error: https://vm.gtimg.cn/c/=/tencentvideo_v1/script/txv.core.js?v=20181010&max_age=604800, line 7: TypeError: e is undefined
+1539342359985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.zUJWuccC6rpz"
+1539342374195	Marionette	INFO	Listening on port 57087
+1539342374255	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342374284	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342374285	Marionette	DEBUG	[6442450945] Frame script registered
+1539342374305	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342403564	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.ft0q8iDEXltU"
+1539342413284	Marionette	INFO	Listening on port 57210
+1539342413449	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342413476	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342413476	Marionette	DEBUG	[6442450945] Frame script registered
+1539342413488	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342416985	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539342433639	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/
+1539342434969	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/
+1539342434970	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/
+1539342435282	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342436801	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450964
+1539342438746	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342438884	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342438889	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342438946	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450950
+1539342438946	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539342438947	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450952
+1539342438947	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450953
+1539342438947	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
+1539342438948	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450955
+1539342438948	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1539342438948	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450962
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1539342440755	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539342441130	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+1539342443558	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://www.baidu.com/
+1539342443652	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://www.baidu.com/
+1539342443653	Marionette	DEBUG	[6442450945] Received DOM event unload for https://www.baidu.com/
+1539342443906	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342444076	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450987
+1539342448585	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342448759	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342448764	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342448805	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450972
+1539342448806	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450973
+1539342448806	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450974
+1539342448806	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450975
+1539342448806	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450976
+1539342448806	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450977
+1539342448806	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450990
+1539342448807	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450984
+1539342448911	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539342448951	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+1539342450552	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://www.baidu.com/
+1539342450588	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://www.baidu.com/
+1539342450588	Marionette	DEBUG	[6442450945] Received DOM event unload for https://www.baidu.com/
+1539342450859	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342451079	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451009
+[Parent 11104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539342455590	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342456388	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+1539342456394	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/6983f15b7g5xch7.html
+[Parent 11104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539342456448	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450994
+1539342456448	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450995
+1539342456448	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450996
+1539342456448	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450997
+1539342456448	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450998
+1539342456448	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450999
+1539342456448	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451012
+1539342456449	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451006
+1539342456555	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539342457520	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+[Parent 11104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539342527364	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.Vh9GLYkprxZu"
+1539342535330	Marionette	INFO	Listening on port 57605
+1539342536634	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342536664	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342536664	Marionette	DEBUG	[6442450945] Frame script registered
+1539342536687	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342540868	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539342588293	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.fqyjPxjxQm3Q"
+1539342593529	Marionette	INFO	Listening on port 57762
+1539342593732	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342593759	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342593760	Marionette	DEBUG	[6442450945] Frame script registered
+1539342593774	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342597173	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539342656856	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.LnpPRrnPzXdN"
+[Child 8120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8121539342665563	Marionette	INFO	Listening on port 57968
+1539342666366	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342666393	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342666394	Marionette	DEBUG	[6442450945] Frame script registered
+1539342666410	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342669517	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+JavaScript error: https://vm.gtimg.cn/c/=/tencentvideo_v1/script/txv.core.js?v=20181010&max_age=604800, line 7: TypeError: e is undefined
+1539342794988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.7CtMT3Ujt5E6"
+1539342804436	Marionette	INFO	Listening on port 58294
+1539342804970	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342805005	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342805006	Marionette	DEBUG	[6442450945] Frame script registered
+1539342805023	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342809161	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539342829058	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/
+1539342829142	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/
+1539342829143	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/
+1539342829629	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+1539342830022	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450965
+1539342834090	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+1539342834309	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+1539342834317	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+1539342834379	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450950
+1539342834380	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539342834381	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450952
+1539342834382	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450953
+1539342834383	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
+1539342834383	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450955
+1539342834384	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1539342834384	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450962
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1539342835142	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539342835208	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+[Parent 2964, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539342856103	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.E6EsY9UIJVzB"
+1539342861775	Marionette	INFO	Listening on port 58529
+1539342862156	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342862191	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342862192	Marionette	DEBUG	[6442450945] Frame script registered
+1539342862212	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539342865130	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+JavaScript error: https://vm.gtimg.cn/c/=/tencentvideo_v1/script/txv.core.js?v=20181010&max_age=604800, line 7: TypeError: e is undefined
+1539342914847	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/
+1539342914942	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/
+1539342914948	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/
+1539342915190	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1539342915191	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450950
+1539342915191	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539342915191	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450952
+1539342915191	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450953
+1539342915191	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
+1539342915192	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450961
+1539342915390	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/fgqtuu38z91hfyw.html
+1539342915638	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450979
+1539342919901	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/fgqtuu38z91hfyw.html
+1539342920080	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/fgqtuu38z91hfyw.html
+1539342920086	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/fgqtuu38z91hfyw.html
+1539342920146	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450964
+1539342920146	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450965
+1539342920146	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450966
+1539342920147	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450967
+1539342920147	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1539342920147	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450969
+1539342920147	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450982
+1539342920148	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450976
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1539342920379	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539342920451	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+[Parent 8484, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539342967123	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.03hLkHJaPcKN"
+1539342973343	Marionette	INFO	Listening on port 58889
+1539342976196	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539342976238	Marionette	DEBUG	[6442450945] Frame script loaded
+1539342976239	Marionette	DEBUG	[6442450945] Frame script registered
+1539342976256	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+[Parent 2876, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2876, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1976, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chrom[Child 9340, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+ium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child [Parent 2876, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8180, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1539342997773	Marionette	INFO	Stopped listening on port 58889
+[GPU 5852, 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1539343003916	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.wyTuI4DKPwYW"
+1539343009941	Marionette	INFO	Listening on port 58994
+1539343010033	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539343010075	Marionette	DEBUG	[6442450945] Frame script loaded
+1539343010076	Marionette	DEBUG	[6442450945] Frame script registered
+1539343010101	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539343012307	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539343026309	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/
+1539343026406	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/
+1539343026418	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/
+1539343026766	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1539343026766	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450950
+1539343026766	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539343026766	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450952
+1539343026766	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450953
+1539343026766	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
+1539343026767	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450961
+1539343026767	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450963
+1539343026978	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539343030148	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450983
+1539343031343	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539343031788	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539343031791	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539343032414	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450966
+1539343032415	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450967
+1539343032415	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1539343032415	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450972
+1539343032415	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450973
+1539343032416	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450974
+1539343032416	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450981
+1539343032417	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450978
+1539343032429	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539343032727	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+[Parent 4076, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539343048090	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://www.baidu.com/
+1539343048182	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://www.baidu.com/
+1539343048182	Marionette	DEBUG	[6442450945] Received DOM event unload for https://www.baidu.com/
+1539343048708	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/fnvl4okkiqycmyj.html
+1539343053138	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/fnvl4okkiqycmyj.html
+1539343053195	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/fnvl4okkiqycmyj.html
+1539343053200	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/fnvl4okkiqycmyj.html
+1539343053575	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450988
+1539343053575	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450990
+1539343053576	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450991
+1539343053576	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450992
+1539343053577	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450993
+1539343053577	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450994
+1539343053577	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451003
+1539343053577	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451000
+1539343053622	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539343053638	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+[Parent 4076, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539343373978	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.tIZC5ljlJ4VV"
+[GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+1539343380304	Marionette	INFO	Listening on port 59834
+1539343382257	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539343382294	Marionette	DEBUG	[6442450945] Frame script loaded
+1539343382295	Marionette	DEBUG	[6442450945] Frame script registered
+1539343382316	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539343384991	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539343403134	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/
+1539343403184	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/
+1539343403190	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/
+1539343403427	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1539343403427	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450950
+1539343403427	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539343403427	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450952
+1539343403427	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450953
+1539343403428	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
+1539343403428	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450961
+1539343403428	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450963
+1539343403620	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+1539343403754	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450981
+1539343408168	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+1539343408757	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+1539343408761	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/6kq9o0hr79kamlt.html
+[Parent 10748, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539343409784	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450966
+1539343409784	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450967
+1539343409785	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1539343409785	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450969
+1539343409786	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450970
+1539343409786	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450971
+1539343409787	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450984
+1539343409787	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450978
+1539343410179	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539343410511	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+[Parent 10748, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539348082650	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.xe9gzEbdq3cF"
+[GFX1-]: ClientLayerManager::BeginTransaction with IPC channel down. GPU process may have died.
+1539348087242	Marionette	INFO	Listening on port 53160
+1539348089242	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539348089277	Marionette	DEBUG	[6442450945] Frame script loaded
+1539348089278	Marionette	DEBUG	[6442450945] Frame script registered
+1539348089302	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539348091357	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539348096334	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/
+1539348142618	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/
+1539348142727	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/
+1539348142766	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/
+1539348142939	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1539348142940	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450950
+1539348142940	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539348142940	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450952
+1539348142941	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450953
+1539348142941	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450954
+1539348142941	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450961
+1539348143219	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539348143377	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450983
+1539348146002	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539348149017	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539348149199	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539348149204	Marionette	DEBUG	[6442450945] Received DOM event unload for https://v.qq.com/x/cover/gz9q7kd8wviwkxv.html
+1539348149271	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1539348149271	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450969
+1539348149271	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450970
+1539348149272	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450971
+1539348149272	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450972
+1539348149273	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450973
+1539348149273	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450986
+1539348149273	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450980
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1539348149965	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1539348150034	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+[Parent 3636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1539348214969	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.6wV3zXH2V7hd"
+1539348219638	Marionette	INFO	Listening on port 53629
+1539348221520	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539348221575	Marionette	DEBUG	[6442450945] Frame script loaded
+1539348221576	Marionette	DEBUG	[6442450945] Frame script registered
+1539348221594	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539348224493	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539348370946	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.YYD6BAdqbTaB"
+1539348375096	Marionette	INFO	Listening on port 54052
+1539348376232	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539348376268	Marionette	DEBUG	[6442450945] Frame script loaded
+1539348376269	Marionette	DEBUG	[6442450945] Frame script registered
+1539348376292	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539348378032	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539348380710	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/
+1539348521841	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.twXBpZDyDFq7"
+1539348527147	Marionette	INFO	Listening on port 54599
+1539348528265	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539348528305	Marionette	DEBUG	[6442450945] Frame script loaded
+1539348528307	Marionette	DEBUG	[6442450945] Frame script registered
+1539348528334	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539348530807	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539348576783	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hitsme\\AppData\\Local\\Temp\\rust_mozprofile.t9M9PqqeBew8"
+1539348581575	Marionette	INFO	Listening on port 54801
+1539348581731	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539348581780	Marionette	DEBUG	[6442450945] Frame script loaded
+1539348581781	Marionette	DEBUG	[6442450945] Frame script registered
+1539348581858	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539348583374	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539348586327	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://v.qq.com/
